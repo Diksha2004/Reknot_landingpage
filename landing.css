@@ -43,8 +43,6 @@ section {
     overflow: hidden;
     background-color: #3aafa9;
   }
-
-  
   
   .topnav a {
     float: left;
@@ -57,20 +55,6 @@ section {
     font-size: 17px;
   }
 
-  
-
- 
-  /* .topnav a:hover {
-    background-color: #ddd;
-    color: #2b7a78;
-    margin: 6px 6px;
-  }
-   */
-  /* .topnav a.active {
-    
-    height: 10px;
-    width: 90px;
-  } */
   
   .topnav .icon {
     display: none;
@@ -209,7 +193,7 @@ section {
     border-radius: 0%;
     height:250px;
     width:1900px;
-    /* background: #bbbbbb57; */
+ 
     background: #3aafa934;
     transform:rotate(-4deg)
     /* mix-blend-mode: color;
