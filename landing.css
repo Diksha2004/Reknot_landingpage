@@ -9,6 +9,7 @@
   outline: none;
   border: none;
   transition: all .2s linear;
+  scroll-behavior: smooth;
 }
 body{
     background-color: #def2f1;
@@ -156,7 +157,7 @@ section {
     display: -ms-grid;
     display: grid;
     
-    -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+    
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1rem;
     margin-top: 50px;
@@ -413,7 +414,7 @@ section {
   width: 6.5rem;
   line-height: 6.5rem;
   font-size: 2.5rem;
-  color: #2b7a78;
+  color: #818181;
   background: #e9edfb;
   border-radius: 50%;
   text-align: center;
@@ -436,14 +437,11 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1.5rem;
 }
 
 .contact .row form {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
           flex: 1 1 42rem;
   border-radius: 1rem;
   background: #3aafa9;
@@ -473,9 +471,7 @@ section {
 }
 
 .contact .row .map {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
+   flex: 1 1 42rem;
   width: 100%;
   border-radius: 1rem;
 }
@@ -487,6 +483,10 @@ section {
   }
   .contact .icons-container .icons p{
     font-size: 12px;
+  
+  }
+  .contact .row .map{
+    width:10%;
   }
 }
 
@@ -501,4 +501,5 @@ section {
   
   color: #222;
 }
+
 
