@@ -160,7 +160,7 @@ section {
     
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1rem;
-    margin-top: 50px;
+    margin-top: 150px;
   }
   
   .count .icons-container .icons {
@@ -260,16 +260,16 @@ section {
 }
 
 .services .box-container {
-
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat( minmax(30rem, 2fr));
+  gap: 7rem;
 }
 
 .services .box-container .box {
   overflow: hidden;
   position: relative;
-  height: 25rem;
+  height: 400px;
+  width: 950px;
 }
 
 .services .box-container .box:hover {
@@ -322,23 +322,28 @@ section {
 @media(max-width:950px){
 	.services .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 2fr));
+    grid-template-columns: repeat(minmax(20rem, 2fr));
     gap: 3rem;	
 	}	
 	.services .box-container .box img{
     height: 70%;
-    width: 100%;
-    
+    width: 100%; 
+  }
+
+  .services .box-container .box{
+    width: 350px;
   }
 
   .services .box-container .box .content{
     padding-top: 10px;
+    width: 350px;
   }
 
   .services .box-container .box .content p {
     font-size: 14px;
   }
 	
+  
 }
 
 
@@ -355,7 +360,7 @@ section {
 .reviews .box-container .box {
   text-align: center;
   padding: 1rem 1rem;
-  border-radius: .5rem;
+  border-radius: .1rem;
 }
 
 .reviews .box-container .box:hover {
@@ -394,6 +399,13 @@ section {
   color: #2b7a78;
 }
 
+@media(max-width:950px){
+	.reviews .box-container {
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+  }
+}
 
 .contact .icons-container {
   display: grid;
@@ -477,7 +489,13 @@ section {
 }
 
 @media screen and (max-width: 600px) {
- 
+
+  .contact .icons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+
   .contact .icons-container .icons h3{
     font-size: 30px;
   }
@@ -486,7 +504,9 @@ section {
   
   }
   .contact .row .map{
-    width:10%;
+    flex: 1 1 42rem;
+   width: 40%;
+   border-radius: 1rem;
   }
 }
 
